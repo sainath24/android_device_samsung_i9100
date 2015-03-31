@@ -29,8 +29,6 @@ PRODUCT_LOCALES += hdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
-    camera2.portability.force_api=1
-    net.tethering.noprovisioning=true
 
 # Sensors
 PRODUCT_PACKAGES += \
