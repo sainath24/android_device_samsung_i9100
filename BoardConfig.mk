@@ -31,5 +31,26 @@ TARGET_KERNEL_CONFIG := cyanogenmod_i9100_defconfig
 # assert
 TARGET_OTA_ASSERT_DEVICE := galaxys2,i9100,GT-I9100,GT-I9100M,GT-I9100P,GT-I9100T,SC-02C
 
+androidboot.selinux=enforcing
+
+
+#TWRP
+TARGET_RECOVERY_VARIANT := twrp
+DEVICE_RESOLUTION := 480x800
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_INTERNAL_STORAGE_PATH := "/emmc"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "emmc"
+TW_EXTERNAL_STORAGE_PATH := "/sdcard"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
+TW_NO_REBOOT_BOOTLOADER := true
+TW_DEFAULT_EXTERNAL_STORAGE := false
+TW_FLASH_FROM_STORAGE := true
+TW_INCLUDE_INJECTTWRP := true
+TW_HAS_DOWNLOAD_MODE := true
+
+
+# Resolution
+DEVICE_RESOLUTION := 480x800
+
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/i9100/BoardConfigVendor.mk
